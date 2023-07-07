@@ -1,0 +1,173 @@
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --neutral-dBlue: hsl(234, 12%, 34%);
+  --neutral-gBlue: hsl(229, 6%, 66%);
+  --neutral-lGray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--neutral-lGray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  width: 25vw;
+  grid-area: 1/3/2/4;
+  margin: 5%;
+}
+.title .rel {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: gray;
+}
+.title .power {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2%;
+  color: rgb(92, 92, 92);
+}
+.title .arti {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.teamCard {
+  position: relative;
+  border-top: 3px solid var(--primary-red);
+  width: auto;
+  box-shadow: 0 0 30px rgba(128, 128, 128, 0.541);
+  padding: 8%;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.calcCard {
+  position: relative;
+  border-top: 3px solid var(--primary-blue);
+  width: auto;
+  box-shadow: 0 0 30px rgba(128, 128, 128, 0.541);
+  border-radius: 5px;
+  padding: 8%;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.karmaCard {
+  position: relative;
+  border-top: 3px solid var(--primary-orange);
+  width: auto;
+  box-shadow: 0 0 30px rgba(128, 128, 128, 0.541);
+  border-radius: 5px;
+  padding: 8%;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.superCard {
+  position: relative;
+  border-top: 3px solid var(--primary-cyan);
+  width: auto;
+  box-shadow: 0 0 30px rgba(128, 128, 128, 0.541);
+  border-radius: 5px;
+  padding: 8%;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1/1/2/2;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(61, 61, 61);
+}
+
+.div2 {
+  grid-area: 2/1/3/2;
+}
+
+.div3 {
+  grid-area: 3/1/4/2;
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 500px) {
+  .title {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (min-width: 786px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 352px);
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .title .rel {
+    font-size: 2rem;
+  }
+  .title .power {
+    font-size: 2rem;
+  }
+  .cards {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0;
+    width: 90vw;
+  }
+  .cards .calcCard {
+    padding: 2%;
+    height: 20vh;
+    width: 20vw;
+    transform: translateY(0vw) translateX(10vw);
+  }
+  .cards .superCard {
+    padding: 2%;
+    height: 20vh;
+    width: 20vw;
+    transform: translateX(-15.5vw) translateY(-32vh);
+  }
+  .cards .teamCard {
+    padding: 2%;
+    height: 20vh;
+    width: 20vw;
+    transform: translateX(17vw) translateY(-18vh);
+  }
+  .cards .karmaCard {
+    padding: 2%;
+    height: 20vh;
+    width: 20vw;
+    transform: translateY(-45vh) translateX(-8.5vw);
+  }
+}/*# sourceMappingURL=style.css.map */
